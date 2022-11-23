@@ -1,5 +1,114 @@
+:root {
+  /* colors slytherin style */
+  --dark-green: #1a472a;
+  --light-green: #69cb8a;
+  --dark-grey: #5d5d5d;
+  --light-grey: #aaaaaa;
+  --black: #000000;
+}
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+body {
+  font-family: "Cairo", sans-serif;
+  background-color: var(--black);
+}
+header {
+  text-align: center;
+  color: var(--light-grey);
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  color: var(--light-green);
+  background-color: var(--dark-green);
+  padding: 1em;
+  margin: 0.5em;
+  min-height: calc(100vh - 76px);
+}
+main section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+main section form {
+  display: flex;
+  gap: 0.5em;
+}
+main section form input:first-of-type {
+  border: none;
+  outline: none;
+  padding: 0 0.1em;
+  border-radius: 0.2em;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  -ms-border-radius: 0.2em;
+  -o-border-radius: 0.2em;
+}
+main section form input:last-of-type {
+  border: none;
+  background-color: var(--black);
+  color: var(--light-grey);
+  padding: 0.2em 0.3em;
+  border-radius: 0.2em;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  -ms-border-radius: 0.2em;
+  -o-border-radius: 0.2em;
+}
+main section .answer div:not(:last-child) {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+main section .answer .gender i {
+  background-color: var(--black);
+  color: var(--light-grey);
+  font-size: 3em;
+  padding: 0.2em;
+  border-radius: 0.2em;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  -ms-border-radius: 0.2em;
+  -o-border-radius: 0.2em;
+}
+main section .answer > div:nth-of-type(2) .number {
+  background-color: var(--black);
+  color: var(--light-grey);
+  font-size: 2em;
+  padding: 0.2em;
+  margin: 0.2em 0;
+  border-radius: 0.2em;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  -ms-border-radius: 0.2em;
+  -o-border-radius: 0.2em;
+}
+main section .answer > div:nth-of-type(2) p:first-of-type {
+  margin-right: 1.5em;
+}
+.cards-container {
+  width: 100%;
+  height: 2em;
+
+  background-color: var(--light-green);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+main aside {
+  min-width: 14em;
+  padding: 1em;
+  margin: 0.5em;
+  background-color: var(--dark-grey);
+  color: var(--light-green);
+  border-radius: 0.3em;
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  -ms-border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+}
+ul {
+  list-style: none;
 }
