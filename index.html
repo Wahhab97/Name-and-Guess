@@ -4,7 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome icons -->
+    <link rel="stylesheet" href="./styles/all.min.css" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Name & Guess</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Name & Guess</h1>
+      <main>
+        <section>
+          <form>
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter a name"
+            />
+            <input type="submit" value="Search" />
+          </form>
+          <div class="answer">
+            <div class="gender">
+              <p>Gender</p>
+              <i class="fa-solid fa-person-dress"></i>
+            </div>
+            <div>
+              <p>Age</p>
+              <p class="number">30</p>
+            </div>
+            <div>
+              <p>Countries</p>
+              <div class="cards-container"></div>
+            </div>
+          </div>
+        </section>
+        <aside>
+          <h3>Guessed Names</h3>
+          <ul></ul>
+        </aside>
+      </main>
+    </header>
+  </body>
 </html>
