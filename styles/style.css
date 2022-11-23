@@ -129,6 +129,7 @@ main section .answer > div:nth-of-type(2) p:first-of-type {
 }
 main aside {
   min-width: 14em;
+  text-align: center;
   padding: 1em;
   margin: 0.5em;
   background-color: var(--dark-grey);
@@ -141,4 +142,11 @@ main aside {
 }
 ul {
   list-style: none;
+}
+ul li {
+  background-color: var(--light-grey);
+  color: var(--dark-green);
+  margin-bottom: 0.5em;
+  padding-left: 0.3em;
+  cursor: pointer;
 }
