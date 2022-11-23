@@ -76,6 +76,11 @@ main section .answer .gender i {
   -ms-border-radius: 0.2em;
   -o-border-radius: 0.2em;
 }
+main section .answer .gender i.dark,
+main section .answer > div:nth-of-type(2) .number.dark {
+  color: var(--dark-green);
+  background-color: var(--dark-green);
+}
 main section .answer > div:nth-of-type(2) .number {
   background-color: var(--black);
   color: var(--light-grey);
@@ -93,11 +98,34 @@ main section .answer > div:nth-of-type(2) p:first-of-type {
 }
 .cards-container {
   width: 100%;
-  height: 2em;
-
+  min-height: 2em;
   background-color: var(--light-green);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 0.5em;
+  padding: 0.5em;
+}
+.cards-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3em;
+}
+.cards-container div img {
+  width: 100%;
+  height: 60%;
+}
+.cards-container div p {
+  color: var(--light-grey);
+  background-color: var(--black);
+  padding: 0.2em 0.3em;
+  border-radius: 0.2em;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  -ms-border-radius: 0.2em;
+  -o-border-radius: 0.2em;
 }
 main aside {
   min-width: 14em;
